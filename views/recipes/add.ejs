@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Recipe</title>
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/form.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+  </head>
+  <body>
+    <%- include('../header') %>
+
+    <h1 class="form-heading">Add New Recipe</h1>
+    <form action="/recipes/add" method="POST">
+      <label for="title">Recipe Title</label>
+      <input type="text" id="title" name="Title" required />
+      <label for="ingredients">Ingredients (comma separated)</label>
+      <input type="text" id="ingredients" name="Ingredients" required />
+      <label for="instructions">Instructions</label>
+      <textarea id="instructions" name="Instructions" required></textarea>
+      <label for="image_name">Image URL</label>
+      <input type="text" id="image_name" name="Image_Name" required />
+      <label for="cleaned_ingredients"
+        >Cleaned Ingredients (comma separated)</label
+      >
+      <input
+        type="text"
+        id="cleaned_ingredients"
+        name="Cleaned_Ingredients"
+        required
+      />
+      <button type="submit">Add Recipe</button>
+    </form>
+
+    <script>
+      const auth_user = sessionStorage.getItem("user");
+      if (!auth_user) {
+        window.location.href = "/login";
+      }
+    </script>
+  </body>
+</html>

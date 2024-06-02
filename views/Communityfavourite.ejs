@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/communityfavourite.css">
+    <title>Community Favourite</title>
+</head>
+<body>
+    <!-- Include the header here -->
+    <%- include("header.ejs") %>
+
+    <!-- Community Favourite content start here -->
+    <div class="community-favourite-container">
+        <h1>Community Favourite Recipes</h1>
+        <div class="recipe-grid">
+            <!-- Recipe 1 -->
+            <div class="recipe-item">
+                <img src="images/picture_5.avif" alt="Grandma's Apple Pie">
+                <div>
+                    <h3 onclick="toggleDescription(this)">Grandma's Apple Pie</h3>
+                    <p>A classic apple pie recipe loved by everyone.</p>
+                </div>
+            </div>
+            <!-- Recipe 2 -->
+            <div class="recipe-item">
+                <img src="images/picture_12.jpg" alt="Chocolate Chip Cookies">
+                <div>
+                    <h3 onclick="toggleDescription(this)">Chocolate Chip Cookies</h3>
+                    <p>The best homemade chocolate chip cookies, a favorite treat for all.</p>
+                </div>
+            </div>
+            <!-- Recipe 3 -->
+            <div class="recipe-item">
+                <img src="images/picture_13.jpg" alt="Banana Bread">
+                <div>
+                    <h3 onclick="toggleDescription(this)">Banana Bread</h3>
+                    <p>Delicious and moist banana bread, perfect for a snack or breakfast.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include the Footer here -->
+    <footer>
+        <p>&copy; 2024 Recipe Oasis. All rights reserved.</p>
+    </footer>
+    
+    
+    <script>
+        function toggleDescription(element) {
+            const description = element.nextElementSibling;
+            if (description.style.display === "none" || description.style.display === "") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

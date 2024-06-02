@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe List</title>
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/list.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+  </head>
+  <body>
+    <%- include('../header') %>
+    <div>
+      <h1 class="list-heading">Recipe List</h1>
+      <div class="list-topper">
+        <a href="/recipes/add"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="plus-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            />
+          </svg>
+          <span>Add New Recipe</span></a
+        >
+      </div>
+      <div class="list">
+        <ul>
+          <% recipes.forEach(recipe => { %>
+          <li>
+            <a href="/recipes/list/<%= recipe._id %>"><%= recipe.Title %></a>
+            <div class="recipe-action">
+              <a
+                href="/recipes/<%= recipe._id %>/edit"
+                style="margin-right: 20px"
+                >Edit</a
+              >
+              <form
+                action="/recipes/list/<%= recipe._id %>?_method=DELETE"
+                method="POST"
+                style="display: inline"
+              >
+                <button type="submit">Delete</button>
+              </form>
+            </div>
+          </li>
+          <% }) %>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Pagination Buttons -->
+    <div class="pagination">
+      <% if (currentPage > 1) { %>
+      <a href="/recipes/list?page=<%= currentPage - 1 %>&limit=<%= 10 %>"
+        >&laquo; Previous</a
+      >
+      <% } %>
+      <span>Page <%= currentPage %> of <%= totalPages %></span>
+      <% if (currentPage < totalPages) { %>
+      <a href="/recipes/list?page=<%= currentPage + 1 %>&limit=<%= 10 %>"
+        >Next &raquo;</a
+      >
+      <% } %>
+    </div>
+
+    <script>
+      const auth_user = sessionStorage.getItem('user');
+      if (!auth_user) {
+        window.location.href = "/login";
+      }
+    </script>
+  </body>
+</html>

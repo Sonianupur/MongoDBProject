@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <title>Recipe Oasis</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="/images/picture_1.jpg" alt="logo" />
+          <h1>Recipe Oasis</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/">HOME</a></li>
+
+          <li id="manage_recipes" style="display: none">
+            <a href="/recipes/list">Manage Recipes</a>
+          </li>
+          <li><a href="/Communityfavourite">Community Favourite</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/contact">CONTACT</a></li>
+          <li id="register" class="signup"><a href="/signup">Sign Up</a></li>
+          <li id="log_in" class="login"><a href="/login">Log In</a></li>
+          <li
+            onclick="logout()"
+            id="log_out"
+            class="logout"
+            style="display: none"
+          >
+            <button>Log Out</button>
+          </li>
+          <div
+            id="userAvatar"
+            style="
+              background-color: #d35400;
+              height: 40px;
+              width: 40px;
+              border-radius: 100%;
+              color: #fff;
+              font-size: 14px;
+              font-weight: 500;
+              display: none;
+              align-items: center;
+              justify-content: center;
+            "
+          ></div>
+        </ul>
+        <div class="mobile-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <script src="scripts/navtoggle.js"></script>
+    <script>
+      const manageRecipes = document.getElementById("manage_recipes");
+      const signupBtn = document.getElementById("register");
+      const loginBtn = document.getElementById("log_in");
+      const logoutBtn = document.getElementById("log_out");
+      const userAvatar = document.getElementById("userAvatar");
+
+      const user = JSON.parse(sessionStorage.getItem("user"));
+      if (user) {
+        manageRecipes.style.display = "flex";
+        signupBtn.style.display = "none";
+        loginBtn.style.display = "none";
+        userAvatar.style.display = "flex";
+        logoutBtn.style.display = "flex";
+        userAvatar.innerHTML = `${user?.fname.charAt(0)}${user?.lname.charAt(
+          0
+        )}`;
+      }
+
+      const logout = async () => {
+        await fetch("/auth/logout", {
+          method: "POST",
+        });
+        sessionStorage.removeItem("user");
+        window.location.href = "/login";
+      };
+    </script>
+  </body>
+</html>

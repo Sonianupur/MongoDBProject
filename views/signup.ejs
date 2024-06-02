@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <!-- Include the header here -->
+    <%- include("header.ejs") %>
+
+    <!-- Sign Up form start here -->
+    <div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div>
+            <h1 style="font-size: 50px; text-align: center">Sign Up</h1>
+          </div>
+        </div>
+        <section class="contact-form">
+          <form action="/auth/signup" method="POST">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input
+                class="text-input"
+                type="text"
+                id="firstName"
+                name="fname"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                class="text-input"
+                id="lastName"
+                name="lname"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                class="text-input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                class="text-input"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <button type="submit" class="submit-button">SUBMIT</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

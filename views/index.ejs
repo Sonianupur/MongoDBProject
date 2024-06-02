@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <title>Professional Recipe Sharing Page</title>
+  </head>
+  <body>
+    <!-- Include the header here -->
+    <%- include("header.ejs") %>
+
+    <section class="hero">
+      <div class="hero-background"></div>
+      <div class="hero-content">
+        <div class="title">
+          <h1>
+            Welcome to <span style="color: yellow">Recipe Sharing Page</span>
+          </h1>
+          <p class="sub-title">Your ultimate taste experience awaits!!!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-recipe">
+      <fieldset style="border-radius: 10px">
+        <legend><h2>About Recipe Oasis</h2></legend>
+        <div class="about-details">
+          <div class="about-description">
+            <p>
+              Welcome to Recipe Sharing, your go-to platform for discovering and
+              sharing the best recipes from all over the world. Based in the
+              vibrant city of London, we are passionate about bringing together
+              food lovers from every corner of the globe.<br /><br />
+              Our journey began in the heart of London, a city renowned for its
+              diverse culinary scene. Inspired by the rich tapestry of flavors
+              and cultures, Recipe Sharing was founded to celebrate this
+              diversity and make it accessible to everyone. Whether you're a
+              seasoned chef or a home cook, we invite you to join our community
+              and share your culinary creations.<br /><br />
+              At Recipe Sharing, we believe that food is a universal language
+              that brings people together. Our platform allows you to explore
+              new recipes, connect with fellow food enthusiasts, and showcase
+              your own dishes. From traditional family recipes to modern twists
+              on classic dishes, our community is a melting pot of culinary
+              inspiration.
+            </p>
+            <br /><br />We are thrilled to welcome food lovers from all cities
+            to our platform. No matter where you're from, your recipes and
+            stories are valued here. Together, let's create a space where
+            everyone can discover new tastes and share the joy of cooking.
+            <p
+              style="
+                margin-top: 20px;
+                font-size: 14px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+              "
+            >
+              <span>Sincerely,</span>
+              <i>- The Recipe Sharing Team</i>
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="images/Picture_4.avif" alt="About Food Picture" />
+          </div>
+        </div>
+      </fieldset>
+    </section>
+
+    <!-- <section class="recipes-actions">
+      <h2>Manage Recipes</h2>
+      <div class="recipe-buttons">
+        <button onclick="location.href='/recipes/add'" class="recipe-btn">
+          Add Recipe
+        </button>
+        <button onclick="location.href='recipes/details'" class="recipe-btn">
+          Recipe Details
+        </button>
+        <button onclick="location.href='/recipes/edit'" class="recipe-btn">
+          Edit Recipe
+        </button>
+        <button onclick="location.href='/recipes/list'" class="recipe-btn">
+          Recipes List
+        </button>
+      </div>
+    </section> -->
+
+    <section class="testimonials">
+      <h2>Testimonials</h2>
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-item">
+          <img src="images/picture_1.jpg" alt="Miss Conica" />
+          <p>
+            "This platform has transformed my cooking experience. I've learned
+            so much and connected with amazing chefs!"
+          </p>
+          <h5>Miss Conica</h5>
+          <div class="rating">★★★★★</div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial-item">
+          <img src="images/picture_2.avif" alt="Mr. John Doe" />
+          <p>
+            "A fantastic place to discover new recipes and share my own
+            creations. Highly recommended!"
+          </p>
+          <h5>Mr. John Doe</h5>
+          <div class="rating">★★★★☆</div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="testimonial-item">
+          <img src="images/picture_3.avif" alt="Mrs. Jane Smith" />
+          <p>
+            "I love the variety of recipes available. There's always something
+            new to try and enjoy!"
+          </p>
+          <h5>Mrs. Jane Smith</h5>
+          <div class="rating">★★★★★</div>
+        </div>
+        <!-- Testimonial 4 -->
+        <div class="testimonial-item">
+          <img src="images/picture_4.avif" alt="Mr. Alex Johnson" />
+          <p>
+            "The community here is incredible. I've received so much positive
+            feedback on my recipes!"
+          </p>
+          <h5>Mr. Alex Johnson</h5>
+          <div class="rating">★★★★☆</div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 Recipe Blog. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/healthyoptions.css">
+    <title>Healthy Options</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <%- include("header.ejs") %>
+    
+
+    <!-- Healthy Options content start here -->
+    <div class="healthy-options-container">
+        <h1>Healthy Recipes</h1>
+        <div class="recipe-grid">
+            <!-- Recipe 1 -->
+            <div class="recipe-item">
+                <img src="images/picture_5.avif" alt="Quinoa Salad">
+                <div>
+                    <h3 onclick="toggleDescription(this)">Quinoa Salad</h3>
+                    <p>A delicious and healthy quinoa salad with fresh vegetables.</p>
+                </div>
+            </div>
+            <!-- Recipe 2 -->
+            <div class="recipe-item">
+                <img src="images/picture_12.jpg" alt="Chickpea Curry">
+                <div>
+                    <h3 onclick="toggleDescription(this)">Chickpea Curry</h3>
+                    <p>An Indian healthy recipe with chickpeas, tomatoes, and a variety of spices.</p>
+                </div>
+            </div>
+            <!-- Recipe 3 -->
+            <div class="recipe-item">
+                <img src="images/picture_13.jpg" alt="Masoor Dal">
+                <div>
+                    <h3 onclick="toggleDescription(this)">Masoor Dal</h3>
+                    <p>A nutritious and comforting red lentil soup, perfect for a healthy meal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Recipe Oasis. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function toggleDescription(element) {
+            const description = element.nextElementSibling;
+            if (description.style.display === "none" || description.style.display === "") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
