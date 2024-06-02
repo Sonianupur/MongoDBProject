@@ -1,0 +1,118 @@
+/* contact form styles */
+.contact-container {
+  background-color: #662549;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* contact info style start here */
+.contact-info {
+  background-color: #ae445a;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.contact-info p {
+  margin-bottom: 10px;
+}
+.info-subtitle {
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* Contact form section style start here */
+
+.contact-form {
+  color: #000000;
+  margin: 0 autu;
+  padding: 20px;
+  background-color: #fdfdfd;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.form-group {
+  font: bold;
+  margin-bottom: 20px;
+}
+
+.text-input {
+  padding: 10px;
+  border: 1px solid gray;
+  width: 100%;
+  font-size: 16px;
+}
+
+#helpMessage {
+  padding: 10px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* submit button style  */
+.submit-button {
+  background-color: #f39f5a;
+  color: #ffffff;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.submit-button:hover {
+  background-color: #ebac79;
+}
+
+/* Google live map style */
+.map {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+/* Media Query for screens with a maximum width of 576px mobile device */
+@media screen and (max-width: 576px) {
+  .contact-container {
+    display: block;
+    margin: 5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  .contact-info div {
+    width: 100%;
+  }
+}
+
+/* Media Query for screens with a minimum width of 769px leptop device */
+
+@media screen and (min-width: 769px) {
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  .contact-info div {
+    width: 80%;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #007bff;
+  color: white;
+}

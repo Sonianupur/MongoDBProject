@@ -1,0 +1,151 @@
+/* Modern Twist Styles */
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f9;
+   color: #333;
+   margin: 0;
+   padding: 20px;
+}
+
+header {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+header h1 {
+   font-size: 2.5em;
+   color: #007BFF;
+}
+
+.modern-banner {
+   background-color: #007BFF;
+   color: white;
+   text-align: center;
+   padding: 20px;
+   margin-bottom: 20px;
+}
+
+.modern-header {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.modern-header h1 {
+   font-size: 2em;
+   color: #007BFF;
+}
+
+hr {
+   margin: 20px 0;
+   border: 0;
+   height: 1px;
+   background: #ccc;
+   background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.modern-table {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap: 20px;
+}
+
+.modern-card {
+   background-color: white;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+   width: 300px;
+   margin-bottom: 20px;
+   text-align: center;
+   padding: 10px;
+}
+
+.top-images {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.top-images img {
+   width: 100%;
+   height: auto;
+   border-bottom: 1px solid #ccc;
+   object-fit: cover;
+   height: 200px; /* Set a fixed height for all images */
+   width: 100%; /* Set a fixed width for all images */
+}
+
+.stage-img {
+   width: 100%;
+   height: auto;
+   margin-top: 10px;
+   object-fit: cover;
+   height: 200px; /* Set a fixed height for all images */
+   width: 100%; /* Set a fixed width for all images */
+}
+
+.modern-card p {
+   margin: 10px 0;
+   font-size: 1em;
+}
+
+.green-room-section, .food-section, .shop-section {
+   margin: 20px 0;
+}
+
+.green-room-container {
+   text-align: center;
+   background-color: #fff;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.green-room-container img {
+   width: 100%;
+   height: auto;
+   margin-top: 20px;
+   object-fit: cover;
+   height: 300px; /* Set a fixed height for all images */
+   width: 100%; /* Set a fixed width for all images */
+}
+
+.food-section h1, .shop-section h1 {
+   text-align: center;
+   margin-bottom: 20px;
+   color: #007BFF;
+}
+
+.shop-food-container {
+   display: flex;
+   justify-content: space-around;
+   gap: 20px;
+}
+
+.food-shop, .shop {
+   text-align: center;
+   background-color: #fff;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-shop img, .shop img {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+   height: 200px; /* Set a fixed height for all images */
+   width: 100%; /* Set a fixed width for all images */
+}
+
+footer {
+   text-align: center;
+   margin-top: 20px;
+   padding: 10px 0;
+   background-color: #007BFF;
+   color: white;
+}

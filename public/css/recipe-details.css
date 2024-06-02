@@ -1,0 +1,76 @@
+.recipe-details {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.recipe-details h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.recipe-details h2 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #495057;
+}
+
+/* List styles */
+.recipe-details ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.recipe-details ul li {
+  background: #e9ecef;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Paragraph styles */
+.recipe-details p {
+  line-height: 1.6;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Link and button styles */
+.recipe-details a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 9px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.recipe-details a:hover {
+  background-color: #0056b3;
+}
+
+.recipe-details form {
+  display: inline;
+}
+
+.recipe-details button {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recipe-details button:hover {
+  background-color: #c82333;
+}

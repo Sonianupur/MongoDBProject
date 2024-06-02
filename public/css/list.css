@@ -1,0 +1,105 @@
+.list-heading {
+  text-align: center;
+  margin-top: 20px;
+  color: #2c3e50;
+}
+
+.list-topper a {
+  display: flex;
+  align-items: center;
+  background-color: #34495e;
+  color: #ffffff;
+  width: 180px;
+  border-radius: 6px;
+  padding: 10px 12px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.list-topper a:hover {
+  background-color: #2c3e50;
+}
+
+.list-topper a .plus-icon {
+  width: 20px;
+  margin-right: 7px;
+}
+
+.list a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.list a:hover {
+  text-decoration: none;
+}
+
+.list ul {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
+
+.list li a {
+  margin-right: 10px;
+}
+
+.list form {
+  margin: 0;
+}
+
+.list button {
+  padding: 5px 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.list button:hover {
+  background-color: #c0392b;
+}
+
+.recipe-action {
+  display: flex;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+.pagination a,
+.pagination span {
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+.pagination a {
+  text-decoration: none;
+}
+.pagination a.active {
+  font-weight: bold;
+}
