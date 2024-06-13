@@ -6,3 +6,4 @@ npm install nodemon
 npm install bcrypt
 npm install ejs
 The database is used here is mongoDB Atlas and mongoDB Compass. 
+npm install -g netlify-cli
