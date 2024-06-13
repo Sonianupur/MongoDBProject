@@ -1,0 +1,41 @@
+Title and cover page
+Solent University
+Faculty of Business, Law and Digital Technologies
+B.Sc. in Computing, 2024
+
+Individual Assignment .
+
+Course Title: Advanced Database System, QHO541.
+Author: 10184580
+Date: 11.06.2024	
+Git repository:
+Hosted web application:
+
+Introduction:
+For the full stack web development project, it  has been  chosen to create a recipe-sharing website that focuses primarily on Bengali dishes, tailored for an audience in Western countries. The site aims to introduce and celebrate the rich culinary heritage of Bangladesh, which often falls under the umbrella of Indian cuisine in the West. This project is inspired by the global popularity of South Asian dishes, particularly in countries like the UK where Chicken Tikka Masala is often regarded as the national dish. The love for Bangladeshi cuisine is evident, and this project seeks to bridge the gap by providing authentic recipes and fostering a community of food enthusiasts.
+(NationalCurryWeek, 2024).
+
+
+System Overview: interfaces
+
+Datastores-
+Database-
+![MongoDB screenshot](image.png)
+File System-
+Media dataStores-
+
+
+
+
+Key Design Decisions:
+
+
+Database Design:
+
+
+Security and scalability:
+
+
+Conclusion and Reflections:
+
+
