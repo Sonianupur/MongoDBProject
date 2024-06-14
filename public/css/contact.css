@@ -1,13 +1,13 @@
 /* contact form styles */
 .contact-container {
-  background-color: #662549;
+  background-color: #e0a5c5;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 /* contact info style start here */
 .contact-info {
-  background-color: #ae445a;
-  color: #ffffff;
+  background-color: #af5567;
+  color: #1a1a1a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@
   color: #000000;
   margin: 0 autu;
   padding: 20px;
-  background-color: #fdfdfd;
+  background-color: #9bcd9a;
 }
 
 .contact-form h2 {

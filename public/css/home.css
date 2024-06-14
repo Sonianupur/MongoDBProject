@@ -81,39 +81,39 @@
   display: flex;
   flex-direction: column;
   padding: 40px 60px;
-  text-align: center;
-  background-color: #ecf0f1;
+  text-align: left;
+  background-color: #db9767;
 }
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  align-items: start;
-  margin-top: 10px;
+  grid-template-columns: repeat(2 , 1fr);
+  gap: 20px;
+  align-items: start; 
+  margin-top: 20px;
 }
 
 .testimonial-item {
   flex: 1;
   margin: 10px;
   padding: 20px;
-  background-color: #add5ad;
-  border: 1px solid #e17ad5;
+  background-color: #a4a39f;
+  border: 1px solid #cd77c3;
   border-radius: 5px;
   max-width: 250px;
   text-align: left;
 }
 
 .testimonial-item img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
 
 .testimonial-item p {
-  height: 120px;
-  margin-top: 5px;
+  height: 100px;
+  margin-top: 10px;
 }
 
 .testimonial-item .rating {
@@ -149,7 +149,7 @@
 .recipes-actions {
   padding: 100px 20px;
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: #e39393;
 }
 
 .recipes-actions h2 {
@@ -165,8 +165,8 @@
 
 .recipe-buttons button.recipe-btn {
   font-size: 1.5em; /* Increased font size */
-  background-color: #ff5722;
-  color: white;
+  background-color: #bb735d;
+  color: rgb(241, 158, 158);
   padding: 15px 30px;
   margin: 10px;
   border: none;
@@ -176,7 +176,7 @@
 }
 
 .recipe-buttons button.recipe-btn:hover {
-  background-color: #e64a19;
+  background-color: #19e638;
 }
 footer {
   text-align: center;

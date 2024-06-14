@@ -44,13 +44,13 @@
       const loginUser = () => {
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
-
+//Make a POST request to the /auth/login endpoint with the email and password
         fetch("/auth/login", {
-          method: "POST",
+          method: "POST",  // HTTP method to send data to the server
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ email, password }),
+          body: JSON.stringify({ email, password }), // Convert the email and password to a JSON string and send in the request body
         })
           .then((response) => response.json())
           .then((data) => {

@@ -2,14 +2,14 @@
 
 .community-favourite-container {
     padding: 20px;
-    background-color: #f4f4f9;
+    background-color: #6b6bbf;
 }
 
 .community-favourite-container h1 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2.5em;
-    color: #333;
+    color: #523737;
 }
 
 .recipe-grid {
@@ -22,10 +22,10 @@
 .recipe-item {
     display: flex;
     align-items: flex-start;
-    border: 1px solid #ccc;
+    border: 1px solid #e18181;
     border-radius: 8px;
     padding: 16px;
-    background-color: #fff;
+    background-color: #b5876a;
     width: 80%;
     max-width: 800px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -52,7 +52,7 @@
     font-size: 1.5em;
     color: #333;
     cursor: pointer;
-    background-color: #007BFF;
+    background-color: #49443e;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -66,7 +66,7 @@
     display: none; /* Initially hide the description */
     margin-top: 10px; /* Add margin to separate from the button */
     font-size: 1em;
-    color: #555;
+    color: #151515;
 }
 footer {
     text-align: center;

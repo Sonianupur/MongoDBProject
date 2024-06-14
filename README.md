@@ -5,5 +5,8 @@ npm install express mongoose body-parser cookie-parser method-override jsonwebto
 npm install nodemon
 npm install bcrypt
 npm install ejs
+on the terminal the project will run when 'node app.js '
+was typed and press entered.
+the port is 3000.
+on browser http://localhost:3000/  then the website can be seen.
 The database is used here is mongoDB Atlas and mongoDB Compass. 
-npm install -g netlify-cli

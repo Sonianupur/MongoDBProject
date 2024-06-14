@@ -59,11 +59,11 @@ router.post("/login", async (req, res) => {
     const token = jwt.sign({ userId: user._id }, "very_secret", {
       expiresIn: "7d",
     });
-
+// Set the token in a cookie and send a response
     res.cookie("token", token, {
       httpOnly: true,
       secure: false,
-      maxAge: 24000 * 60 * 60,
+      maxAge: 24000 * 60 * 60, // 24 hr
     });
 
     res
@@ -74,13 +74,15 @@ router.post("/login", async (req, res) => {
     res.status(500).json({ message: "Server error. Please try again later." });
   }
 });
-
+// Define a POST route for logging out the user
 router.post("/logout", async (req, res) => {
+  // Clear the "token" cookie by setting its expiration date to a past date
   res.clearCookie("token", {
     path: "/",
     domain: "localhost",
-    expires: new Date(0),
+    expires: new Date(0),// Set the expiration date to a past date to ensure the cookie is removed
   });
+  // Send a JSON response with a status code of 200 and a message indicating a successful logout
   res.status(200).json({ message: "OK" });
 });
 
