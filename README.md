@@ -5,3 +5,4 @@ npm install nodemon
 npm install bcrypt
 npm install ejs
 The database is used here is mongoDB Atlas and mongoDB Compass. 
+The project has to run writings node app.js in the terminal.
